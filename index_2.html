@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_2</title>
+</head>
+
+<body>
+    <header id="menu">
+        <h1 style="color: seagreen;text-align: center;">Детский мир</h1>
+        <ul style="list-style-type:square;">
+            <li><a href="#data">Ваши данные</a></li>
+            <li><a href="#audio">Песни</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#networks">Мы в соцсетях</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="data" style="width: 250px; border: 2px solid red; padding: 5px;margin-bottom: 20px;">
+            <h2>Ваши данные</h2>
+            <form action="mail.php" method="POST">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="Имя" placeholder="Введите имя">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="Фамилия" placeholder="Введите фамилию">
+                <input type="checkbox" style="display: block;">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <input type="submit" name="Отправить">
+                <ul>
+                    <li><a href="#ulybka">От улыбки</a></li>
+                    <li><a href="#oblaka">Белокрылые лошадки</a></li>
+                    <li><a href="#kapitoshka">Капитошка</a></li>
+                </ul>
+                <a href="#menu">Меню</a>
+            </form>
+        </div>
+        <div id="audio" style="border: 2px solid blue; margin-bottom: 20px; padding: 5px">
+            <h2>Песни</h2>
+            <audio controls="controls">
+                <source src="./audio/deti-online.com_-_ulybka.mp3">
+            </audio>
+            <audio controls="controls">
+                <source src="./audio/Oblaka.mp3">
+            </audio>
+            <audio controls="controls">
+                <source src="./audio/))-Pesnya_kapitoshki.mp3">
+            </audio>
+            <a href="#menu">Меню</a>
+        </div>
+
+        <div id="video" style="border: 2px solid orange; padding: 5px; margin-bottom: 20px;">
+            <h2>Видео</h2>
+            <iframe id="ulybka" width="560" height="315" src="https://www.youtube.com/embed/djGa71cPvD4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="display: block;margin-top: 20px;margin-bottom: 20px;"></iframe>
+            <video id="oblaka" controls="controls">
+                <source src="./video/usemind.org_tryam_zdravst.mp4" type="video/mp4">
+            </video>
+            <video id=kapitoshka controls="controls" style="display: block;">
+                <source src="./video/Multik.UseMind.ORG_kapitoshka.mp4">
+            </video>
+            <a href="#menu">Меню</a>
+        </div>
+    </main>
+    <footer id="networks" style="border: 2px solid black; padding: 5px;">
+        <h2>Мы в соцсетях</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+        </ul>
+        <a href="#menu">Меню</a>
+    </footer>
+</body>
+
+</html>
